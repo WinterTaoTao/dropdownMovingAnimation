@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AniDropdownTagsComponent } from './ani-dropdown-tags/ani-dropdown-tags.component';
+import { DropdownMenuComponent } from './dropdown-menu/dropdown-menu.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AniDropdownTagsComponent,
+    DropdownMenuComponent
   ],
   imports: [
     BrowserModule

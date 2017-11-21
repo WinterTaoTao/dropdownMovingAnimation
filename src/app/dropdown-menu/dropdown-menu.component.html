@@ -1,3 +1,13 @@
-<p>
-  dropdown-menu works!
-</p>
+<div class="dropdown-content">
+  <div *ngFor="let dropdownItem of dropdownItems">
+    <a class="dropdown-item" href="{{dropdownItem.jumpLink}}">
+      <img class="item-icon" src={{dropdownItem.iconPath}}>
+      <div class="item-text">
+        <div class="item-title">{{dropdownItem.title}}</div>
+        <div class="item-introduction" *ngIf="dropdownItem.introduction">
+          {{dropdownItem.introduction}}
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

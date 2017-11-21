@@ -10,11 +10,6 @@
 
 @arrow-size: 10px;
 
-.hide(){
-  display: block;
-  position: absolute;
-}
-
 .center(){
   left: 50%;
   top: 50%;
@@ -45,14 +40,14 @@
 }
 
 .dropdown {
-  .hide;
+  display: block;
+  position: absolute;
   top: 100%;
-  background-color: @dropdown-backgroun-color;
-  border: 1px solid black;
+  //opacity: 0.5;
 
   &:after{
     content: " ";
-    .hide;
+    position: absolute;
     bottom: 100%;
     left: @nav-tag-width/2;
     margin-left: -@arrow-size;

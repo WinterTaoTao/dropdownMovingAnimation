@@ -1,5 +1,12 @@
-<div class="tags" *ngFor="let tag of aniDropdownTags">
+<div class="tags"
+     *ngFor="let tag of aniDropdownTags; let i = index"
+     [ngStyle] = "set_tag_style()"
+     (mouseover)="set_dropdown_menu(i); change_display(true)"
+     (mouseout)="change_display(false)"
+>
   <div class="tag-text">{{tag}}</div>
 </div>
-<app-dropdown-menu class="dropdown"></app-dropdown-menu>
+
+<app-dropdown-menu class="dropdown"
+                   [ngStyle]="set_dropdown_menu_style()"></app-dropdown-menu>
 
